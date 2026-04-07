@@ -1,0 +1,17 @@
+This is a SaaS application built with Vite, React 18, TypeScript, Tailwind CSS, shadcn/ui, and Supabase for authentication and backend services.
+
+Key architecture decisions:
+- HashRouter is used for client-side routing
+- Supabase handles authentication (email/password)
+- AuthContext provides auth state throughout the app
+- ProtectedRoute guards authenticated pages
+- DashboardLayout provides the main app shell with sidebar navigation
+- shadcn/ui components are used for the UI layer
+- CSS variables power the theming system (light/dark)
+
+When adding new features:
+1. Create pages in src/pages/
+2. Add routes in src/main.tsx
+3. Use the AuthContext for any auth-related functionality
+4. Use shadcn/ui components from src/components/ui/
+5. Add new shadcn components with: npx shadcn-ui@latest add <component>
